@@ -295,7 +295,7 @@
       <a href="#teams">Teams</a>
       <a href="#members">Members</a>
     </nav>
-    <button class="edit-toggle active" id="editToggle" onclick="toggleEdit()" fdprocessedid="nkctvj">
+    <button class="edit-toggle active" id="editToggle" onclick="toggleEdit()" fdprocessedid="rrx5p3">
       <span id="editIcon">✓</span> <span id="editLabel">Done</span>
     </button>
   </div>
@@ -680,7 +680,7 @@
           </div>
         <button class="photo-pos-btn" type="button" title="Adjust photo position" aria-label="Adjust position" fdprocessedid="a1ldg">⤡</button></div>
         <div class="member-body">
-          <div class="member-name" contenteditable="false">Tatjana Dietz</div>
+          <div class="member-name" contenteditable="false">Dr. Tatjana Dietz</div>
           <div class="member-role" contenteditable="false">Research Assistant, Educational Sciences</div>
           <p class="member-bio" contenteditable="false">
             Works in teaching and research at the Department of Educational Sciences at Goethe University.
@@ -690,7 +690,7 @@
             child protection, and childhood and family research focusing on agency and vulnerability.
           </p>
           <div class="member-foot">
-            <a href="mailto:" class="member-email" onclick="editEmail(event, this)">✉ Email</a>
+            <a href="mailto:T.Dietz@em.uni-frankfurt.de" class="member-email" onclick="editEmail(event, this)" title="T.Dietz@em.uni-frankfurt.de">✉ T.Dietz@em.uni-frankfurt.de</a>
             <span class="member-affil">Goethe Frankfurt</span>
           </div>
         </div>
@@ -994,9 +994,9 @@
 
 <div class="edit-banner">
   <span>✎ Edit mode — click any text or image</span>
-  <button onclick="saveEdits()" fdprocessedid="qatvmk">💾 Save</button>
-  <button onclick="exportHTML()" fdprocessedid="wlgus">⬇ Export HTML</button>
-  <button class="danger" onclick="toggleEdit()" fdprocessedid="ef4dch">Done</button>
+  <button onclick="saveEdits()" fdprocessedid="agxy1nm">💾 Save</button>
+  <button onclick="exportHTML()" fdprocessedid="dod0qn">⬇ Export HTML</button>
+  <button class="danger" onclick="toggleEdit()" fdprocessedid="mb0dom">Done</button>
 </div>
 
 <div class="help-tooltip dismissed" id="helpTooltip">
@@ -1018,10 +1018,10 @@
   <div class="email-edit-card">
     <h3>Set email address</h3>
     <p>Enter the email address for this member.</p>
-    <input type="email" id="emailInput" placeholder="name@university.edu" fdprocessedid="6m1jnq">
+    <input type="email" id="emailInput" placeholder="name@university.edu">
     <div class="email-edit-actions">
-      <button class="cancel-btn" onclick="closeEmailModal()" fdprocessedid="rykmam">Cancel</button>
-      <button class="save-btn" onclick="saveEmail()" fdprocessedid="4n1lur">Save</button>
+      <button class="cancel-btn" onclick="closeEmailModal()">Cancel</button>
+      <button class="save-btn" onclick="saveEmail()">Save</button>
     </div>
   </div>
 </div>
@@ -1032,7 +1032,7 @@
     <h3>Admin access</h3>
     <p>Enter the admin password to unlock edit mode.</p>
     <input type="password" id="passwordInput" placeholder="Password" autocomplete="off">
-    <div id="passwordError" style="display: none; color: rgb(220, 38, 38); font-size: 13px; margin-top: 8px;">Incorrect password. Try again.</div>
+    <div id="passwordError" style="display: block; color: rgb(220, 38, 38); font-size: 13px; margin-top: 8px;">Incorrect password. Try again.</div>
     <div class="email-edit-actions">
       <button class="cancel-btn" onclick="closePasswordModal()">Cancel</button>
       <button class="save-btn" onclick="submitPassword()">Unlock</button>
@@ -1772,4 +1772,4 @@
 
 
 <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;96e01f73674c440a9e586dd84d4ed732&quot;,&quot;r&quot;:1,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script>
-<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration><span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span></body></html>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration><span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span><div class="flash-msg" title="Click to dismiss" style="position: fixed; top: 90px; left: 50%; transform: translateX(-50%); background: var(--teal); color: rgb(255, 255, 255); padding: 12px 22px; border-radius: 10px; box-shadow: var(--shadow-lg); z-index: 200; font-size: 14px; font-weight: 600; cursor: pointer; transition: opacity 0.3s; opacity: 1;">Saved ✓</div></body></html>
